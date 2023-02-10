@@ -1,7 +1,8 @@
 import { Bench } from "tinybench";
 import { fibonacci } from "../src/fibo";
+import { withCodSpeed } from "@codspeed/tinybench-plugin";
 
-const bench = new Bench();
+const bench = withCodSpeed(new Bench());
 
 bench
   .add("fibo5", () => {

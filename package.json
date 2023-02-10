@@ -7,6 +7,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@codspeed/tinybench-plugin": "^1.0.1",
     "tinybench": "^2.3.1",
     "tsx": "^3.12.3"
   }
