@@ -1,6 +1,13 @@
 export const fibonacci = (n: number): number => {
-  if (n <= 1) {
-    return n;
-  }
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  const cache: Record<number, number> = {};
+  const inner = (n: number): number => {
+    if (n <= 1) {
+      return n;
+    }
+    if (cache[n] === undefined) {
+      cache[n] = inner(n - 1) + inner(n - 2);
+    }
+    return cache[n];
+  };
+  return inner(n);
 };
