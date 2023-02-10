@@ -1,6 +1,11 @@
 export const fibonacci = (n: number): number => {
-  if (n <= 1) {
-    return n;
+  let a = 0;
+  let b = 1;
+  let c = 0;
+  for (let i = 0; i < n; i++) {
+    c = a + b;
+    a = b;
+    b = c;
   }
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  return a;
 };
