@@ -1,0 +1,13 @@
+{
+  "name": "codspeed-node-example",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "bench": "tsx benches/bench.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "tinybench": "^2.3.1",
+    "tsx": "^3.12.3"
+  }
+}
